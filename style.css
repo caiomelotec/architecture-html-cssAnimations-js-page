@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+html {
+  height: 2500px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  margin-top: 15px;
+}
+.nav-div ul,
+.nav-div,
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav-div,
+.links {
+  gap: 2rem;
+  font-weight: 500;
+}
+.links a {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav h1 {
+  cursor: pointer;
+}
+.nav-btn {
+  background-color: rgb(105, 175, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.links a:hover {
+  color: rgb(41, 69, 0);
+}
+.nav-btn:hover {
+  background-color: rgb(76, 127, 0);
+}
+
+/* Define the animation for the icon */
+@keyframes slideRight {
+  0% {
+    left: 70%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Apply the animation to the icon when hovering */
+.second-s-btn:hover .fa-solid,
+.nav-btn:hover .fa-solid {
+  animation: slideRight 0.5s linear forwards;
+}
+
+/* Add some styling to the icon */
+.fa-solid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  transition: transform 0.3s;
+  margin-left: 8px;
+  color: white;
+}
+/* Adjust the icon's position when hovering */
+
+.nav-btn:hover .fa-solid {
+  transform: translate(8px, -50%);
+}
+
+/* Background   */
+
+.background-img {
+  background: url("./imgs/background-01.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 600px;
+  background-repeat: none;
+}
+.h1-title {
+  font-size: 8rem;
+
+  color: rgb(28, 5, 5);
+  overflow: hidden; /* Ensures the text is not visible initially */
+  white-space: nowrap; /* Prevents line breaks */
+  animation: typing 4s steps(48, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.projects-info {
+  display: flex;
+  gap: 6rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+.projects {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.advantages {
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.second-section div,
+.advantages div {
+  width: 50%;
+}
+.second-section div {
+  width: 20%;
+}
+.second-section {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  gap: 20rem;
+}
+
+.second-s-btn {
+  background-color: transparent;
+  color: rgb(105, 175, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  margin-right: 2rem;
+}
+
+#green-arrow {
+  color: rgb(105, 175, 0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  transition: transform 0.3s;
+}
+
+.second-s-btn:hover .fa-solid {
+  transform: translate(8px, -50%);
+}
+
+.btns-adv {
+  background-color: white;
+  border: solid 2px black;
+  padding: 10px 20px;
+  border-radius: 16px;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.4s ease;
+}
+.btns-adv:hover {
+  background: black;
+  color: white;
+}
+
+.s-s-div1 {
+  box-shadow: 20px 2px 30px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.p-section-imgs {
+  display: flex;
+  gap: 13rem;
+}
+
+.p1 {
+  margin-right: 20px; /* Adjust the spacing between elements */
+}
+
+.port-img {
+  width: 300px; /* Adjust the image width as needed */
+  height: 300px; /* Adjust the image height as needed */
+  background-size: cover;
+  border-radius: 60px 10px 60px 10px;
+}
+.p-s-info {
+  display: flex;
+  gap: 2rem;
+}
+.p1 p {
+  text-align: left;
+}
+.portfolio-section button {
+  margin-top: 1.5rem;
+}
+
+/* SLIDER */
+
+.swiper {
+  width: 1200px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+  background-size: cover;
+  width: 300px; /* Adjust the image width as needed */
+  height: 300px; /* Adjust the image height as needed */
+  background-size: cover;
+  border-radius: 60px 10px 60px 10px;
+}
+
+.tailored-apts {
+  display: flex;
+  gap: 6rem;
+  margin-top: 2rem;
+  vertical-align: middle;
+  justify-content: space-between;
+  width: 70%;
+  margin: 1rem auto;
+  align-items: center;
+}
+
+.next,
+.prev {
+  background-color: rgb(105, 175, 0);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.carousel {
+  margin-top: 3rem;
+}
