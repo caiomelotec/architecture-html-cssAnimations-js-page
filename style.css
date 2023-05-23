@@ -294,6 +294,7 @@ footer div ul li {
   position: absolute;
   right: 1rem;
   font-size: x-large;
+  cursor: pointer;
 }
 
 .follow-span {
