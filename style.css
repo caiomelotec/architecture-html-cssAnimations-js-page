@@ -268,6 +268,34 @@ nav h1 {
 }
 .carousel {
   margin-top: 3rem;
+  display: flex;
+}
+@media screen and (max-width: 1085px) {
+  .tailored-apts button {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .carousel {
+    padding-left: 4rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .carousel {
+    padding-left: 8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .carousel {
+    padding-left: 2rem;
+  }
+  .tailored-apts {
+    flex-direction: column;
+  }
+  .tailored-apts button {
+    margin-top: 0;
+  }
 }
 
 footer {
